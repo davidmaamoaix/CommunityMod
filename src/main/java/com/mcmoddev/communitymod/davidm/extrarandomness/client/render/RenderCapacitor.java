@@ -18,7 +18,6 @@ public class RenderCapacitor extends TileEntitySpecialRenderer<TileEntityCapacit
 
 	private static final ResourceLocation POWER_TEXTURE = new ResourceLocation(CommunityGlobals.MOD_ID, "textures/blocks/meme_power.png");
 	private static final ResourceLocation CONFIG_TEXTURE = new ResourceLocation(CommunityGlobals.MOD_ID, "textures/blocks/config.png");
-	private static final ResourceLocation BEAM_TEXTURE = new ResourceLocation("textures/entity/beacon_beam.png");
 	
 	@Override
 	public void render(TileEntityCapacitor te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
@@ -35,8 +34,8 @@ public class RenderCapacitor extends TileEntitySpecialRenderer<TileEntityCapacit
 		}
 		
 		this.renderSideConfig(te, x, y, z);
-		GlStateManager.color(1, 1, 1, 1);
 		
+		GlStateManager.color(1, 1, 1, 1);
 		GlStateManager.enableLighting();
 		GlStateManager.disableBlend();
 		GlStateManager.popMatrix();
